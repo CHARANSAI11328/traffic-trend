@@ -203,7 +203,7 @@ export default function OverviewPage() {
         coveragePeriod={data?.kpis?.data_coverage_period}
       />
 
-      <div className="p-6 max-w-[1600px] mx-auto w-full">
+      <div className="p-3 sm:p-5 md:p-6 max-w-[1600px] mx-auto w-full">
         {/* Global Filter Bar */}
         {data?.filter_options && (
           <GlobalFilterBar
@@ -239,7 +239,7 @@ export default function OverviewPage() {
 
         {/* Dynamic Executive KPIs */}
         {data?.kpis && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2.5 sm:gap-4 mb-6">
             <KPICard
               title="Total Crashes"
               value={data.kpis.total_accidents}

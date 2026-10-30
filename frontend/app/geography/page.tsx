@@ -57,7 +57,7 @@ export default function GeographyPage() {
     <div className="flex-1 flex flex-col min-h-screen bg-[#f4f6f8]">
       <TopNav onRefresh={fetchGeoData} />
 
-      <div className="p-6 max-w-[1600px] mx-auto w-full">
+      <div className="p-3 sm:p-5 md:p-6 max-w-[1600px] mx-auto w-full">
         <GlobalFilterBar
           options={filterOptions}
           filters={filters}
@@ -85,8 +85,8 @@ export default function GeographyPage() {
         )}
 
         {/* Map Section */}
-        <div className="bg-white border border-slate-200 rounded-xl p-5 mb-6 shadow-xs">
-          <div className="flex items-center justify-between mb-4">
+        <div className="bg-white border border-slate-200 rounded-xl p-3 sm:p-5 mb-6 shadow-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
             <div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-brand-teal" />
@@ -98,12 +98,12 @@ export default function GeographyPage() {
                 Interactive spatial visualization of verified accident coordinates and severity distributions
               </p>
             </div>
-            <div className="text-xs text-slate-600 font-mono font-semibold bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200">
+            <div className="text-xs text-slate-600 font-mono font-semibold bg-slate-50 px-2.5 py-1 rounded-md border border-slate-200 self-start sm:self-auto">
               Plotting {data?.map_points?.length || 0} spatial incidents
             </div>
           </div>
 
-          <MapLibreMap points={data?.map_points || []} className="w-full h-[520px]" />
+          <MapLibreMap points={data?.map_points || []} className="w-full h-[380px] sm:h-[520px]" />
         </div>
 
         {/* Hotspot Corridors Cards */}

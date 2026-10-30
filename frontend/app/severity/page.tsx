@@ -153,7 +153,7 @@ export default function SeverityPage() {
     <div className="flex-1 flex flex-col min-h-screen bg-[#f4f6f8]">
       <TopNav onRefresh={fetchSeverity} />
 
-      <div className="p-6 max-w-[1600px] mx-auto w-full">
+      <div className="p-3 sm:p-5 md:p-6 max-w-[1600px] mx-auto w-full">
         <GlobalFilterBar
           options={filterOptions}
           filters={filters}
@@ -192,7 +192,7 @@ export default function SeverityPage() {
 
         {/* Severity Summary Cards */}
         {data?.distribution && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4 mb-6">
             {data.distribution.map((d: any) => {
               const isFatal = d.accident_severity === "Fatal";
               const isGrievous = d.accident_severity === "Grievous Injury";

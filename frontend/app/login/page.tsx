@@ -49,8 +49,8 @@ export default function LoginPage() {
     <div className="flex-1 flex flex-col min-h-screen bg-[#f4f6f8]">
       <TopNav />
 
-      <div className="flex-1 flex items-center justify-center p-6">
-        <div className="w-full max-w-md bg-white border border-slate-200/80 rounded-2xl p-8 shadow-lg">
+      <div className="flex-1 flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full max-w-md bg-white border border-slate-200/80 rounded-2xl p-5 sm:p-8 shadow-lg">
           <div className="text-center mb-6">
             <div className="w-12 h-12 rounded-xl bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto mb-3 shadow-sm">
               <ShieldAlert className="w-6 h-6 text-brand-teal" />

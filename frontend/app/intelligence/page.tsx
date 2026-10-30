@@ -139,7 +139,7 @@ export default function IntelligencePage() {
     <div className="flex-1 flex flex-col min-h-screen bg-[#f4f6f8]">
       <TopNav onRefresh={fetchIntelligence} />
 
-      <div className="p-6 max-w-[1600px] mx-auto w-full">
+      <div className="p-3 sm:p-5 md:p-6 max-w-[1600px] mx-auto w-full">
         {/* Header Banner */}
         <div className="bg-white border border-slate-200/80 rounded-xl p-5 mb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 shadow-sm">
           <div>
