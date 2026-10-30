@@ -120,6 +120,7 @@ app.include_router(reports.router, prefix=f"{settings.API_V1_STR}/reports", tags
 app.include_router(system.router, prefix=f"{settings.API_V1_STR}/system", tags=["System"])
 
 @app.get("/health", tags=["Health"])
+@app.get(f"{settings.API_V1_STR}/health", tags=["Health"])
 def health_check():
     return {"status": "ok", "service": "traffic-trend-api", "version": "2.0.0"}
 
