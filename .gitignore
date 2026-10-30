@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Node & Next.js
+node_modules/
+frontend/node_modules/
+.next/
+frontend/.next/
+out/
+frontend/out/
+.vercel/
+frontend/.vercel/
+
+# Testing & Caches
+.pytest_cache/
+.coverage
+htmlcov/
+.lucide-*
+.sucrase-*
+.resolve-*
+
+# Logs and runtime artifacts
+logs/*.log
+data/exports/*.pdf
+data/exports/*.xlsx
+data/database/*.db
+data/processed/*.parquet
+!data/raw/traffic_accidents_benchmark_demonstration.csv
+!data/raw/traffic_accidents_benchmark_demonstration.xlsx
+
+# Environments & Keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+.vercel
