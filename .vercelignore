@@ -1,8 +1,6 @@
-data/
 notebooks/
 legacy_streamlit/
 docs/
-*.csv
-*.xlsx
 tests/
 backend/tests/
+*.xlsx
