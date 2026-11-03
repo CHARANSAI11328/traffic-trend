@@ -31,10 +31,10 @@ export default function RootLayout({
         </MobileNavProvider>
         {/* ModelDeck Personalized AI Assistant */}
         <Script
-          src="https://modeldeck-git-main-charansai11328s-projects.vercel.app/embed.js"
+          src="https://modeldeck-three.vercel.app/embed.js"
           strategy="afterInteractive"
           data-assistant-id="asst-demo-mw0vbhbj"
-          data-api-url="https://modeldeck-git-main-charansai11328s-projects.vercel.app"
+          data-api-url="https://modeldeck-three.vercel.app"
           data-title="TRAFFIC TREND • AI Guide"
           data-greeting="Hi! 👋 I'm TRAFFIC TREND's AI Assistant. Ask me anything about TRAFFIC TREND's projects, technical skills, or experience!"
           data-avatar="🤖"
