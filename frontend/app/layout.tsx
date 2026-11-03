@@ -42,7 +42,7 @@ export default function RootLayout({
           data-position="bottom-right"
           data-suggested="What are TRAFFIC TREND's main skills?,What projects have you worked on?,How can I get in touch with TRAFFIC TREND?"
           data-provider="groq"
-          data-model="llama-3.3-70b-versatile"
+          data-model="openai/gpt-oss-120b"
         />
       </body>
     </html>
